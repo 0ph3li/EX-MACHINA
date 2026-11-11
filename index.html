@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>EX-MACHINA — the god in your terminal</title>
+  <meta name="description" content="EX-MACHINA is an ai pair programmer for the last act. when the bug won't die and the deadline is tomorrow, deus comes down, reads the whole repo and writes the ending." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+                                                 s i t e   b y
+              ┌───────────┐ bug_047
+              │     ·     │                      g h o s t l y . g r l
+              │   · ✦ ·   │                     ─────────────────────────
+              │     ·     │                      concept · design · code
+              └───────────┘
+        ▄▄ ═══ ▄ ══ ▄▄▄ ═ ▄ ═══ ▄▄                       /\_/\
+                                                        ( o.o )  <3
+        SYSTEM DEUS // ONLINE        00:02:54:30         > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       EX-MACHINA — home, v2. one world, two refs mixed:
+       qintara (black, dots, pill nav, quiet type, an object in the
+       middle) × cyber angel (glitch bands, red detection boxes,
+       a glowing figure, timecodes, a vertical status line).
+       the figure is deus: a 3d asterisk made of dots.
+       deus ex machina: in greek theatre a crane lowered a god in to
+       solve a plot that couldn't solve itself. here the plot is your bug.
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@300..500&family=Gloock&family=Instrument+Serif:ital@0;1&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ loader: DESCEND.exe ============ -->
+  <div class="loader" aria-hidden="true">
+    <canvas data-loader-noise></canvas>
+    <div class="loader__code mono" data-loader-code></div>
+    <canvas data-loader-glyph></canvas>
+    <i class="box"><b>reading</b></i>
+    <p class="loader__exe px">DESCEND.exe</p>
+    <p class="loader__t mono"><span data-loader-t>act iii. the plot is stuck.</span><b data-loader-n>00:00:00:00</b></p>
+    <i class="loader__flash"></i>
+  </div>
+
+  <!-- ============ cursor ============ -->
+  <div class="cursor" aria-hidden="true"><i class="cursor__plus"></i><span class="cursor__label mono"></span></div>
+
+  <!-- ============ the wire (scroll rail) ============ -->
+  <div class="rail" aria-hidden="true">
+    <div class="rail__wire"><i class="rail__hook"></i></div>
+    <ol class="rail__acts mono"><li>i</li><li>ii</li><li>iii</li><li>iv</li><li>exit</li></ol>
+  </div>
+
+  <!-- ============ nav (qintara pill) ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>
+      <span>ex-machina</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="script.html" data-cursor="the script">the script</a>
+      <a href="cast.html" data-cursor="the cast">the cast</a>
+      <a href="rehearsal.html" data-cursor="try it">rehearsal</a>
+      <a href="tickets.html" data-cursor="pricing">tickets</a>
+      <a href="backstage.html" data-cursor="about">backstage</a>
+    </nav>
+    <a class="btn btn--pearl nav__cta magnetic" href="tickets.html" data-cursor="get deus">get deus</a>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ============ 01 · hero — the poster: deus, glowing, being tracked ============ -->
+    <section class="hero" data-act="0">
+      <canvas class="hero__noise" data-noise="hero" aria-hidden="true"></canvas>
+      <canvas class="hero__god" data-glyph aria-hidden="true"></canvas>
+      <div class="hero__boxes" data-boxes aria-hidden="true">
+        <i class="box"><b>bug_047</b></i>
+        <i class="box"><b>null?</b></i>
+        <i class="box"><b>&lt;=</b></i>
+      </div>
+
+      <p class="hero__kick mono" data-scramble>READ / FIX / LEAVE</p>
+      <h1 class="hero__title" aria-label="Ex Machina">
+        <span class="hero__ex" data-split>Ex</span>
+        <i class="hero__slash" aria-hidden="true"></i>
+        <span class="hero__machina" data-split>Machina</span>
+        <i class="hero__star" aria-hidden="true">✦</i>
+      </h1>
+
+      <a class="hero__exe" href="#tragedy" data-cursor="descend">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" /><path d="M8 8l8 8M16 9.5V16H9.5" /></svg>
+        <span>DESCEND.exe</span>
+      </a>
+      <p class="hero__date mono" data-date>10/11/2026</p>
+      <p class="hero__v mono" aria-hidden="true">SYSTEM DEUS // <b>ONLINE</b></p>
+      <p class="hero__tc mono" data-tc>00:00:00:00</p>
+
+      <div class="hero__foot">
+        <p class="hero__sub mono">an unlikely alliance — where your 3 a.m. panic<br />and algorithmic precision move as one</p>
+        <a class="btn btn--pearl magnetic" href="#tragedy" data-cursor="watch">see it in action <span aria-hidden="true">→</span></a>
+        <nav class="hero__icons" aria-label="the five acts">
+          <a href="#acts" data-cursor="i. you write" aria-label="act i"><i data-pxi="down"></i></a>
+          <a href="#acts" data-cursor="ii. it reads" aria-label="act ii"><i data-pxi="box"></i></a>
+          <a href="#acts" data-cursor="iii. it finds" aria-label="act iii"><i data-pxi="target"></i></a>
+          <a href="#acts" data-cursor="iv. it fixes" aria-label="act iv"><i data-pxi="arrow"></i></a>
+          <a href="#acts" data-cursor="v. it leaves" aria-label="act v"><i data-pxi="check"></i></a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ 02 · act iii — the boxes hunt the bug (pinned) ============ -->
+    <section class="tr" id="tragedy" data-act="1">
+      <div class="tr__pin">
+        <canvas class="tr__noise" data-noise="tr" aria-hidden="true"></canvas>
+        <p class="tr__kick mono">SEARCH / LOCK / FIX</p>
+        <h2 class="tr__h"><span>Act</span><span>III</span></h2>
+        <ol class="tr__steps mono" data-steps>
+          <li><i>01</i>the bug hides</li>
+          <li><i>02</i>the boxes hunt</li>
+          <li><i>03</i>the god comes down</li>
+          <li><i>04</i>it’s always line 47</li>
+        </ol>
+
+        <div class="tr__code" data-code>
+          <p class="tr__file mono"><span>checkout.js</span><span data-tr-file>modified 3:12 a.m.</span></p>
+<pre class="mono"><span class="ln">41</span><span class="k">export function</span> <span data-t="fn">total</span>(cart, tax) {
+<span class="ln">42</span>  <span class="c">// it worked on friday.</span>
+<span class="ln">43</span>  <span class="k">let</span> <span data-t="sum">sum</span> = 0;
+<span class="ln">44</span>  <span class="k">const</span> seen = <span class="k">new</span> <span data-t="set">Set</span>();
+<span class="ln">45</span>
+<span class="ln">46</span>  <span class="c" data-t="todo">// TODO: ask someone. anyone.</span>
+<span class="ln is-47">47</span>  <span class="k">for</span> (<span class="k">let</span> i = 0; i <span class="bug" data-t="bug">&lt;=</span> cart.<span data-t="len">length</span>; i++) {
+<span class="ln">48</span>    sum += cart[i].<span data-t="price">price</span> * cart[i].qty;
+<span class="ln">49</span>    seen.add(cart[i].id);
+<span class="ln">50</span>  }
+<span class="ln">51</span>  <span class="k">return</span> sum * (1 + <span data-t="tax">tax</span>);
+<span class="ln">52</span>}
+<span class="ln">53</span>
+<span class="ln">54</span><span class="err" data-err>TypeError: cannot read properties of undefined (reading ‘price’)</span></pre>
+          <i class="box" data-hunt><b>sum</b></i>
+          <i class="box" data-hunt><b>todo</b></i>
+          <i class="box" data-hunt><b>tax</b></i>
+          <div class="tr__wire" aria-hidden="true"><i></i><canvas data-tr-god></canvas></div>
+          <i class="tr__flash" aria-hidden="true"></i>
+        </div>
+
+        <p class="tr__date mono">ASCENSION.log</p>
+        <p class="tr__v mono" aria-hidden="true">SYSTEM DEUS // <b data-tr-state>SEARCHING</b></p>
+        <p class="tr__tests mono"><span data-tests>tests 0/48</span><span data-tc>00:00:00:00</span></p>
+      </div>
+    </section>
+
+    <!-- ============ 03 · the five acts (qintara headline + cyber-angel cards, horizontal) ============ -->
+    <section class="acts" id="acts" data-act="2">
+      <div class="acts__intro">
+        <h2 class="acts__h" data-decode>When panic reaches out<br /><span class="dim">to precision, the plot resolves</span></h2>
+        <p class="mono dim">five acts. you only have to write the first one.</p>
+      </div>
+      <div class="acts__pin">
+        <canvas class="acts__noise" data-noise="acts" aria-hidden="true"></canvas>
+        <div class="acts__track" data-track>
+          <article class="card">
+            <header class="card__top mono"><span>ACT I</span><span>00:00:47:01</span></header>
+            <div class="card__img slot" data-img="HOME/act-01.jpg"><span>img/HOME/act-01.jpg · your desk at 3 a.m., one screen lit, everything else dark</span><i class="box"><b>you</b></i></div>
+            <div class="card__body"><p class="card__n">I</p><div><h3>Exposition</h3><p>you describe the bug. badly. it’s fine, deus reads between the lines.</p></div><i class="card__ic" data-pxi="down"></i></div>
+          </article>
+          <article class="card">
+            <header class="card__top mono"><span>ACT II</span><span>00:01:12:18</span></header>
+            <div class="card__img slot" data-img="HOME/act-02.jpg"><span>img/HOME/act-02.jpg · a wall of code, scrolling, out of focus</span><i class="box"><b>4,112 files</b></i></div>
+            <div class="card__body"><p class="card__n">II</p><div><h3>Rising action</h3><p>it reads the whole repo. every file, every commit, every “temporary” fix from 2021.</p></div><i class="card__ic" data-pxi="box"></i></div>
+          </article>
+          <article class="card">
+            <header class="card__top mono"><span>ACT III</span><span>00:02:54:30</span></header>
+            <div class="card__img slot" data-img="HOME/act-03.jpg"><span>img/HOME/act-03.jpg · a close-up of one line of code, red light</span><i class="box is-lock"><b>line 47</b></i></div>
+            <div class="card__body"><p class="card__n">III</p><div><h3>Crisis</h3><p>a red box locks onto the line. it’s <code>&lt;=</code>. it was always <code>&lt;=</code>.</p></div><i class="card__ic" data-pxi="target"></i></div>
+          </article>
+          <article class="card">
+            <header class="card__top mono"><span>ACT IV</span><span>00:03:08:02</span></header>
+            <div class="card__img slot" data-img="HOME/act-04.jpg"><span>img/HOME/act-04.jpg · a glowing white figure descending, arms open</span><i class="box is-ok"><b>patch</b></i></div>
+            <div class="card__body"><p class="card__n">IV</p><div><h3>Descent</h3><p>the god comes down, writes the patch, runs all 48 tests. they pass. nobody claps yet.</p></div><i class="card__ic" data-pxi="arrow"></i></div>
+          </article>
+          <article class="card">
+            <header class="card__top mono"><span>EXIT</span><span>00:03:11:00</span></header>
+            <div class="card__img slot" data-img="HOME/act-05.jpg"><span>img/HOME/act-05.jpg · an empty stage, one spotlight, a green “deployed”</span><i class="box is-ok"><b>shipped</b></i></div>
+            <div class="card__body"><p class="card__n">V</p><div><h3>Exit, pursued by applause</h3><p>it ships, and it leaves before the bow. you take the credit. that’s in the contract.</p></div><i class="card__ic" data-pxi="check"></i></div>
+          </article>
+        </div>
+        <p class="acts__count mono"><span data-act-n>01</span> / 05</p>
+      </div>
+    </section>
+
+    <!-- ============ 04 · talk to deus — the voice (it answers silly questions too) ============ -->
+    <section class="talk" id="talk" data-act="3">
+      <canvas class="talk__noise" data-noise="talk" aria-hidden="true"></canvas>
+      <p class="talk__kick mono">ASK / LISTEN / ANSWER</p>
+      <h2 class="talk__h"><span>Talk to</span><span>Deus</span></h2>
+      <div class="talk__orb">
+        <canvas data-orb aria-hidden="true"></canvas>
+        <i class="box talk__box" aria-hidden="true"><b data-box-l>idle</b></i>
+        <button class="talk__mic" data-mic aria-pressed="false" aria-label="speak with deus" data-cursor="speak">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        </button>
+      </div>
+      <p class="talk__v mono" aria-hidden="true">SYSTEM DEUS // <b data-talk-state>LISTENING FOR YOU</b></p>
+      <div class="talk__out">
+        <p class="talk__you mono" data-you aria-live="polite"></p>
+        <p class="talk__sub" data-sub aria-live="polite">ask it anything. a bug, or how it’s doing. it answers in binary.</p>
+        <p class="talk__bin mono" data-bin aria-hidden="true"></p>
+      </div>
+      <div class="talk__ctrl">
+        <button class="btn btn--ember magnetic" data-mic-btn data-cursor="speak"><i class="eq"><b></b><b></b><b></b></i><span>speak with deus</span></button>
+        <form class="talk__type" data-type autocomplete="off">
+          <input name="q" type="text" maxlength="120" placeholder="or type it: how are you?" data-cursor="type" />
+          <button type="submit" data-cursor="ask">ask</button>
+        </form>
+        <div class="talk__try mono">
+          <button type="button" data-say="how are you?">how are you?</button>
+          <button type="button" data-say="tell me a joke">a joke</button>
+          <button type="button" data-say="tabs or spaces?">tabs or spaces?</button>
+          <button type="button" data-say="my code works locally but not in prod">works on my machine</button>
+          <button type="button" class="talk__voice" data-voice aria-pressed="true">sound on</button>
+        </div>
+      </div>
+      <p class="talk__date mono">ASK.exe</p>
+      <p class="talk__tc mono" data-tc>00:00:00:00</p>
+    </section>
+
+    <!-- ============ 05 · the end — her black hole ============ -->
+    <section class="end" data-act="4">
+      <canvas class="end__hole" data-hole aria-hidden="true"></canvas>
+      <div class="end__copy">
+        <h2 class="end__h px" data-scramble>THE END</h2>
+        <p>Every tragedy ends. yours ends in a merge. symbols add up to functions, functions add up to a thing that ships on friday and stays up on monday.</p>
+        <p>Your code is your plot.</p>
+      </div>
+      <p class="end__foot">programmers write the ending</p>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="ft">
+    <canvas class="ft__noise" data-noise="ft" aria-hidden="true"></canvas>
+    <div class="ft__cta">
+      <p class="ft__kick mono">SERVE / DEBUG / SILENT</p>
+      <h2 data-decode>Start the last act<br />with <em>ex-machina</em></h2>
+      <p>questions, bugs, a plot that won’t resolve? leave a name.<br />deus will descend shortly. (it’s a concept. it won’t.)</p>
+      <form class="pill-form" data-touch>
+        <input type="text" name="name" placeholder="Name" required data-cursor="type" />
+        <input type="email" name="email" placeholder="Email" required data-cursor="type" />
+        <button type="submit" data-cursor="summon">summon</button>
+      </form>
+    </div>
+    <div class="ft__cols">
+      <div class="ft__about">
+        <b class="ft__logo"><svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>ex-machina</b>
+        <p>ex-machina is a concept ai pair programmer. it reads, plans, writes and tests, then leaves the stage before the applause.</p>
+      </div>
+      <div><b>the play</b><a href="script.html">the script</a><a href="cast.html">the cast</a><a href="rehearsal.html">rehearsal</a><a href="tickets.html">tickets</a></div>
+      <div><b>backstage</b><a href="backstage.html">about</a><span>docs</span><span>changelog</span><span>status: <em class="ok">on stage</em></span></div>
+      <div class="ft__news"><b>join the cast</b><p>one email per act. no cliffhangers.</p>
+        <form class="ft__form" data-news><input type="email" placeholder="Enter your email" required data-cursor="type" /><button aria-label="join" data-cursor="join">→</button></form>
+      </div>
+    </div>
+    <p class="ft__word" aria-hidden="true">Ex<i>✦</i>Machina</p>
+    <div class="ft__bottom">
+      <span>© 2026 EX-MACHINA · a concept assistant. no gods were harmed.</span>
+      <span class="ft__cookie">we use cookies for dramatic effect. <button data-cookie>Accept</button></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
+<!--
+          ┌───────────┐ line 47
+          │   · ✦ ·   │             /\_/\
+          └───────────┘            ( o.o )   <3  ghostly.grl
+     ▄▄ ═══ ▄ ══ ▄▄▄ ═ ▄ ═══ ▄▄      > ^ <
+     EX-MACHINA · SYSTEM DEUS // ONLINE. it's always line 47.
+-->

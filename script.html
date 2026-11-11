@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>the script — EX-MACHINA</title>
+  <meta name="description" content="how EX-MACHINA works, written as a play: five acts, one bug, no improvisation. it reads, it finds, it fixes, it proves it, it leaves." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+        THE SCRIPT                                   s i t e   b y
+        ──────────
+        INT. YOUR TERMINAL — 3:12 A.M.               g h o s t l y . g r l
+                                                    ─────────────────────────
+                        YOU                          concept · design · code
+              it was always <=.
+                                                         /\_/\
+                        DEUS                            ( o.o )  <3
+              it is always <=.                           > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       EX-MACHINA — the script (how it works). same world as the home:
+       qintara × cyber angel. the page is a screenplay; a red box
+       reads it with you, paragraph by paragraph.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@300..500&family=Gloock&family=Instrument+Serif:ital@0;1&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/script.css" />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"><i class="cursor__plus"></i><span class="cursor__label mono"></span></div>
+
+  <div class="rail" aria-hidden="true">
+    <div class="rail__wire"><i class="rail__hook"></i></div>
+    <ol class="rail__acts mono"><li>i</li><li>ii</li><li>iii</li><li>iv</li><li>exit</li></ol>
+  </div>
+
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>
+      <span>ex-machina</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="script.html" data-cursor="the script">the script</a>
+      <a href="cast.html" data-cursor="the cast">the cast</a>
+      <a href="rehearsal.html" data-cursor="try it">rehearsal</a>
+      <a href="tickets.html" data-cursor="pricing">tickets</a>
+      <a href="backstage.html" data-cursor="about">backstage</a>
+    </nav>
+    <a class="btn btn--pearl nav__cta magnetic" href="tickets.html" data-cursor="get deus">get deus</a>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ============ hero: the title page of the script ============ -->
+    <section class="sh" data-act="0">
+      <canvas data-noise="sh" aria-hidden="true"></canvas>
+      <canvas class="sh__god" data-glyph aria-hidden="true"></canvas>
+      <i class="box sh__box" aria-hidden="true"><b>reading</b></i>
+      <p class="sh__kick mono">READ / PLAN / WRITE / TEST / LEAVE</p>
+      <h1 class="sh__title" aria-label="The Script">
+        <span class="sh__a" data-split>The</span>
+        <i class="hero__slash sh__slash" aria-hidden="true"></i>
+        <span class="sh__b" data-split>Script</span>
+      </h1>
+      <p class="sh__sub">how it works, written as a play.<br /><span class="dim">five acts, one bug, no improvisation.</span></p>
+      <p class="sh__file mono">SCRIPT.txt</p>
+      <p class="hero__v mono" aria-hidden="true">SYSTEM DEUS // <b>READING</b></p>
+      <p class="hero__tc mono" data-tc>00:00:00:00</p>
+      <a class="sh__down mono" href="#play" data-cursor="read it">↓ begin reading</a>
+    </section>
+
+    <!-- ============ dramatis personae ============ -->
+    <section class="dp">
+      <p class="dp__h mono">DRAMATIS PERSONAE</p>
+      <ul class="dp__list">
+        <li><span class="mono">01</span><i data-pxi="eye"></i><h3>You</h3><p class="mono">the protagonist. tired. brave.</p></li>
+        <li><span class="mono">02</span><i data-pxi="bug"></i><h3>The bug</h3><p class="mono">the antagonist. lives on line 47.</p></li>
+        <li><span class="mono">03</span><i data-pxi="star"></i><h3>Deus</h3><p class="mono">the god. lowered in at act iii.</p></li>
+        <li><span class="mono">04</span><i data-pxi="flask"></i><h3>The tests</h3><p class="mono">the chorus. forty-eight voices.</p></li>
+        <li><span class="mono">05</span><i data-pxi="fire"></i><h3>Production</h3><p class="mono">offstage. on fire. never seen.</p></li>
+      </ul>
+    </section>
+
+    <!-- ============ the play: a screenplay, read by a red box ============ -->
+    <section class="play" id="play">
+      <aside class="play__side">
+        <div class="play__still">
+          <div class="play__img slot" data-img="SCRIPT/scene-01.jpg"><span>img/SCRIPT/scene-01.jpg · a desk at 3 a.m., a red test suite</span></div>
+          <div class="play__img slot" data-img="SCRIPT/scene-02.jpg"><span>img/SCRIPT/scene-02.jpg · rows of files, a library of code</span></div>
+          <div class="play__img slot" data-img="SCRIPT/scene-03.jpg"><span>img/SCRIPT/scene-03.jpg · one line, a red box on it</span></div>
+          <div class="play__img slot" data-img="SCRIPT/scene-04.jpg"><span>img/SCRIPT/scene-04.jpg · something luminous coming down a wire</span></div>
+          <div class="play__img slot" data-img="SCRIPT/scene-05.jpg"><span>img/SCRIPT/scene-05.jpg · dawn, a green check, an empty chair</span></div>
+          <i class="box play__still-box"><b data-still-l>scene 01</b></i>
+        </div>
+        <ol class="play__index mono" data-index>
+          <li><a href="#act-1"><i>I</i>exposition</a></li>
+          <li><a href="#act-2"><i>II</i>rising action</a></li>
+          <li><a href="#act-3"><i>III</i>crisis</a></li>
+          <li><a href="#act-4"><i>IV</i>descent</a></li>
+          <li><a href="#act-5"><i>V</i>exit</a></li>
+        </ol>
+        <p class="play__tc mono"><span data-tc>00:00:00:00</span><span data-read>0%</span></p>
+      </aside>
+
+      <div class="play__text" data-text>
+        <i class="box play__box" data-reader aria-hidden="true"><b>reading</b></i>
+
+        <article class="act-s" id="act-1" data-act="0">
+          <header class="act-s__h"><span class="mono">ACT I</span><h2>Exposition</h2></header>
+          <p class="scene mono" data-r>INT. YOUR TERMINAL — 3:12 A.M.</p>
+          <p class="dir" data-r>A desk. One screen lit. Cold coffee. A test suite, red from top to bottom.</p>
+          <div class="ln" data-r><b class="mono">YOU</b><p>checkout says NaN. only on fridays. only for some people.</p></div>
+          <p class="dir" data-r>YOU type it into the prompt, badly. DEUS does not judge. DEUS has seen worse.</p>
+          <div class="ln" data-r><b class="mono">DEUS</b><p>tell me more. or don’t. i’ll read it myself.</p></div>
+          <pre class="panel mono" data-r data-panel><span class="cmd">$ deus "checkout total NaN on fridays??"</span>
+› reading the question…
+› intent: bug · scope: checkout · mood: panic
+› ok. stay there.</pre>
+        </article>
+
+        <article class="act-s" id="act-2" data-act="1">
+          <header class="act-s__h"><span class="mono">ACT II</span><h2>Rising action</h2></header>
+          <p class="scene mono" data-r>INT. THE REPO — CONTINUOUS</p>
+          <p class="dir" data-r>4,112 files. DEUS reads all of them the way you read a menu: fast, and judging.</p>
+          <div class="ln" data-r><b class="mono">DEUS</b><p>your config, your tests, your git log. who is “fix2_final_REAL”?</p></div>
+          <div class="ln" data-r><b class="mono">YOU</b><p>…me.</p></div>
+          <pre class="panel mono" data-r data-panel>› indexed 4,112 files · 61,904 symbols
+› read the git log, last 90 days · 3 suspects
+› checkout.js changed friday, 17:58
+› nobody wrote a test for it. noted.</pre>
+        </article>
+
+        <article class="act-s" id="act-3" data-act="2">
+          <header class="act-s__h"><span class="mono">ACT III</span><h2>Crisis</h2></header>
+          <p class="scene mono" data-r>INT. CHECKOUT.JS, LINE 47 — LATER</p>
+          <p class="dir" data-r>The red boxes go out like search dogs. One stops. Then all of them.</p>
+          <div class="ln" data-r><b class="mono">DEUS</b><p>here. you loop one step too far. <code>cart[cart.length]</code> is undefined, and undefined has no price.</p></div>
+          <div class="ln" data-r><b class="mono">YOU</b><p>it was always <code>&lt;=</code>.</p></div>
+          <div class="ln" data-r><b class="mono">DEUS</b><p>it is always <code>&lt;=</code>.</p></div>
+          <pre class="panel mono" data-r data-panel>› hypothesis: off-by-one in total() · confidence 0.97
+› reproduced: a cart of 3 items reads index 3
+› <span class="bad">TypeError: cannot read properties of undefined</span></pre>
+        </article>
+
+        <article class="act-s" id="act-4" data-act="3">
+          <header class="act-s__h"><span class="mono">ACT IV</span><h2>Descent</h2></header>
+          <p class="scene mono" data-r>INT. YOUR BRANCH — MOMENTS LATER</p>
+          <p class="dir" data-r>A crane creaks. DEUS is lowered in on a wire. It writes one character and one test.</p>
+          <div class="ln" data-r><b class="mono">DEUS</b><p>patch first, then proof. i don’t ask you to believe me.</p></div>
+          <pre class="panel mono" data-r data-panel><span class="del">- for (let i = 0; i &lt;= cart.length; i++) {</span>
+<span class="add">+ for (let i = 0; i &lt; cart.length; i++) {</span>
+<span class="add">+ test('total of a 3-item cart', () =&gt; …)</span>
+› running 48 tests… <span class="ok">48 passed</span></pre>
+          <p class="dir" data-r>THE TESTS, all forty-eight of them, sing. Quietly. It is 3:14 a.m.</p>
+        </article>
+
+        <article class="act-s" id="act-5" data-act="4">
+          <header class="act-s__h"><span class="mono">ACT V</span><h2>Exit, pursued by applause</h2></header>
+          <p class="scene mono" data-r>EXT. PRODUCTION — DAWN</p>
+          <p class="dir" data-r>A pull request opens itself. It says what broke, why, and what it touched. Nothing else.</p>
+          <div class="ln" data-r><b class="mono">DEUS</b><p>it’s yours. merge it, or don’t. i never push to main.</p></div>
+          <pre class="panel mono" data-r data-panel>› opened PR #219 “fix: off-by-one in total()”
+› 2 files · +9 −1 · notes for the reviewer included
+› waiting for you. <span class="ok">deus doesn’t merge.</span></pre>
+          <p class="dir" data-r>EXIT DEUS, before the applause. YOU take the bow. It’s in the contract.</p>
+          <p class="curtain-line mono" data-r>— CURTAIN —</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ the numbers ============ -->
+    <section class="nums">
+      <canvas data-noise="nums" aria-hidden="true"></canvas>
+      <p class="nums__kick mono">BACKSTAGE, IN NUMBERS</p>
+      <ul class="nums__list">
+        <li><i data-pxi="box"></i><b data-count="4112">0</b><p class="mono">files read before touching one</p></li>
+        <li><i data-pxi="target"></i><b data-count="0.8" data-dec="1">0</b><p class="mono">seconds to find line 47</p></li>
+        <li><i data-pxi="flask"></i><b data-count="48">0</b><p class="mono">tests run, every time</p></li>
+        <li><i data-pxi="check"></i><b data-count="0">0</b><p class="mono">pushes to main without you</p></li>
+      </ul>
+    </section>
+
+    <!-- ============ notes from the director (faq) ============ -->
+    <section class="notes">
+      <h2 class="notes__h"><span>Notes from</span><span>the director</span></h2>
+      <div class="notes__list">
+        <details><summary><i class="mono">01</i>does deus see all my code?<b aria-hidden="true">+</b></summary><p>only the repo you open it in, and only while you’re in the room. it doesn’t keep a copy, and it doesn’t train on your plot.</p></details>
+        <details><summary><i class="mono">02</i>will it push to main at 3 a.m.?<b aria-hidden="true">+</b></summary><p>never. it opens a pull request with notes and waits. the bow is yours, and so is the merge button.</p></details>
+        <details><summary><i class="mono">03</i>what if it’s wrong?<b aria-hidden="true">+</b></summary><p>it says so. every patch comes with the test that proves it, and when it isn’t sure it tells you its confidence instead of improvising.</p></details>
+        <details><summary><i class="mono">04</i>which languages does it speak?<b aria-hidden="true">+</b></summary><p>typescript, python, go, rust, java, ruby, php, swift, kotlin, c, c++, sql, and a little ancient greek. out loud it only speaks binary.</p></details>
+        <details><summary><i class="mono">05</i>is the bug really always on line 47?<b aria-hidden="true">+</b></summary><p>statistically, no. dramatically, yes.</p></details>
+      </div>
+    </section>
+
+    <!-- ============ cta → rehearsal ============ -->
+    <section class="next">
+      <canvas data-noise="next" aria-hidden="true"></canvas>
+      <p class="mono next__k">NEXT SCENE</p>
+      <a class="next__a" href="rehearsal.html" data-cursor="rehearse"><span>Rehearse it</span><span>yourself <i>→</i></span></a>
+      <p class="mono dim">bring a bug. deus brings the ending.</p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <canvas class="ft__noise" data-noise="ft" aria-hidden="true"></canvas>
+    <div class="ft__cols ft__cols--top">
+      <div class="ft__about">
+        <b class="ft__logo"><svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>ex-machina</b>
+        <p>ex-machina is a concept ai pair programmer. it reads, plans, writes and tests, then leaves the stage before the applause.</p>
+      </div>
+      <div><b>the play</b><a href="script.html">the script</a><a href="cast.html">the cast</a><a href="rehearsal.html">rehearsal</a><a href="tickets.html">tickets</a></div>
+      <div><b>backstage</b><a href="backstage.html">about</a><span>docs</span><span>changelog</span><span>status: <em class="ok">on stage</em></span></div>
+      <div class="ft__news"><b>join the cast</b><p>one email per act. no cliffhangers.</p>
+        <form class="ft__form" data-news><input type="email" placeholder="Enter your email" required data-cursor="type" /><button aria-label="join" data-cursor="join">→</button></form>
+      </div>
+    </div>
+    <p class="ft__word" aria-hidden="true">Ex<i>✦</i>Machina</p>
+    <div class="ft__bottom">
+      <span>© 2026 EX-MACHINA · a concept assistant. no gods were harmed.</span>
+      <span class="ft__cookie">we use cookies for dramatic effect. <button data-cookie>Accept</button></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+<!--
+            YOU                         /\_/\
+     it was always <=.                 ( o.o )   <3  ghostly.grl
+            DEUS                        > ^ <
+     it is always <=.           — CURTAIN —
+-->

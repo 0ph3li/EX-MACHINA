@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>tickets — EX-MACHINA</title>
+  <meta name="description" content="pricing, as a box office. standing room is free, the stalls cost a coffee a week, the box seats your whole team. pick a seat, print your ticket." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+        ┌────────────────────────────┬───────┐       s i t e   b y
+        │ ADMIT ONE                  ┊ ROW G │
+        │ EX-MACHINA · OPENING NIGHT ┊  47   │       g h o s t l y . g r l
+        │ the stalls      $12 / show ┊ ▌║▌▌║ │      ─────────────────────────
+        └────────────────────────────┴───────┘       concept · design · code
+              ·  ·  ·  ·  ·  ·  ·  ·                     /\_/\
+            ·  ·  ·  ·  ·  ·  ·  ·  ·  ·                ( o.o )  <3
+          ·  ·  ·  ·  ·  ·  [·]  ·  ·  ·  ·              > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       EX-MACHINA — tickets (pricing). same world: qintara × cyber angel.
+       plans are ticket stubs; three questions pick the right one for
+       your team, the live ticket adds it up and prints. no money moves.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@300..500&family=Gloock&family=Instrument+Serif:ital@0;1&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/script.css" />
+  <link rel="stylesheet" href="css/rehearsal.css" />
+  <link rel="stylesheet" href="css/tickets.css" />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"><i class="cursor__plus"></i><span class="cursor__label mono"></span></div>
+
+  <div class="rail" aria-hidden="true">
+    <div class="rail__wire"><i class="rail__hook"></i></div>
+    <ol class="rail__acts mono"><li>i</li><li>ii</li><li>iii</li><li>iv</li><li>exit</li></ol>
+  </div>
+
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>
+      <span>ex-machina</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="script.html" data-cursor="the script">the script</a>
+      <a href="cast.html" data-cursor="the cast">the cast</a>
+      <a href="rehearsal.html" data-cursor="try it">rehearsal</a>
+      <a href="tickets.html" data-cursor="pricing">tickets</a>
+      <a href="backstage.html" data-cursor="about">backstage</a>
+    </nav>
+    <a class="btn btn--pearl nav__cta magnetic" href="#plans" data-cursor="get deus">get deus</a>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ============ title ============ -->
+    <section class="sh sh--short" data-act="0">
+      <canvas data-noise="sh" aria-hidden="true"></canvas>
+      <canvas class="sh__god" data-glyph aria-hidden="true"></canvas>
+      <i class="box sh__box" aria-hidden="true"><b>admit one</b></i>
+      <p class="sh__kick mono">BOX OFFICE / OPEN</p>
+      <h1 class="sh__title" aria-label="Opening Night">
+        <span class="sh__a" data-split>Opening</span>
+        <i class="hero__slash sh__slash" aria-hidden="true"></i>
+        <span class="sh__b" data-split>Night</span>
+      </h1>
+      <p class="sh__sub">three ways in.<br /><span class="dim">the first act is always free.</span></p>
+      <p class="sh__file mono">TICKETS.exe</p>
+      <p class="hero__v mono" aria-hidden="true">SYSTEM DEUS // <b>BOX OFFICE</b></p>
+      <p class="hero__tc mono" data-tc>00:00:00:00</p>
+      <a class="sh__down mono" href="#plans" data-cursor="tickets">↓ the tickets</a>
+    </section>
+
+    <!-- ============ the tickets ============ -->
+    <section class="tk" id="plans" data-act="1">
+      <canvas data-noise="tk" aria-hidden="true"></canvas>
+      <div class="tk__head">
+        <p class="mono tk__k">THE TICKETS</p>
+        <div class="tk__toggle mono" role="group" aria-label="billing">
+          <button type="button" class="is-on" data-bill="m" data-cursor="monthly">per show <small>monthly</small></button>
+          <button type="button" data-bill="y" data-cursor="yearly">season pass <small>yearly · −20%</small></button>
+          <i class="tk__pill" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="tk__list">
+        <article class="tix" data-plan="0">
+          <div class="tix__main">
+            <header class="tix__top mono"><span>ADMIT ONE</span><span>STANDING ROOM</span></header>
+            <h2 class="tix__name">Standing<br />room</h2>
+            <p class="tix__price"><b data-m="0" data-y="0">0</b><span class="mono">$ / forever</span></p>
+            <p class="tix__for">for the curious, the students, the 2 a.m. side project.</p>
+            <ul class="tix__inc mono">
+              <li>the oracle + the mechanic</li>
+              <li>one act a day (30 requests)</li>
+              <li>public repos</li>
+              <li>the rehearsal, unlimited</li>
+            </ul>
+            <a class="btn btn--sm tix__btn" href="#find" data-cursor="free">start free</a>
+          </div>
+          <div class="tix__stub mono"><span>ACTS</span><b>30</b><span>SEATS</span><b>1</b><i class="tix__bar" aria-hidden="true"></i><span class="tix__no">Nº 0001</span></div>
+        </article>
+
+        <article class="tix tix--hot" data-plan="1">
+          <i class="box tix__box" aria-hidden="true"><b>most booked</b></i>
+          <div class="tix__main">
+            <header class="tix__top mono"><span>ADMIT ONE</span><span>THE STALLS</span></header>
+            <h2 class="tix__name">The<br />stalls</h2>
+            <p class="tix__price"><b data-m="12" data-y="9.60">12</b><span class="mono" data-per>$ / month</span></p>
+            <p class="tix__for">the price of a coffee a week. for anyone who ships.</p>
+            <ul class="tix__inc mono">
+              <li>all six roles</li>
+              <li>unlimited acts</li>
+              <li>private repos, read whole</li>
+              <li>the understudy, 1 night a week</li>
+            </ul>
+            <a class="btn btn--ember btn--sm tix__btn magnetic" href="#find" data-cursor="the stalls">get the stalls</a>
+          </div>
+          <div class="tix__stub mono"><span>ACTS</span><b>∞</b><span>SEATS</span><b>1</b><i class="tix__bar" aria-hidden="true"></i><span class="tix__no">Nº 0047</span></div>
+        </article>
+
+        <article class="tix" data-plan="2">
+          <div class="tix__main">
+            <header class="tix__top mono"><span>ADMIT A COMPANY</span><span>THE BOX</span></header>
+            <h2 class="tix__name">The<br />box</h2>
+            <p class="tix__price"><b data-m="39" data-y="31.20">39</b><span class="mono" data-per>$ / seat / month</span></p>
+            <p class="tix__for">a private box for the whole team. the god reviews everybody.</p>
+            <ul class="tix__inc mono">
+              <li>everything in the stalls</li>
+              <li>the understudy, every night</li>
+              <li>the critic on every PR</li>
+              <li>sso, audit log, nothing trained on your plot</li>
+            </ul>
+            <a class="btn btn--sm tix__btn" href="#find" data-cursor="book a box">book a box</a>
+          </div>
+          <div class="tix__stub mono"><span>ACTS</span><b>∞</b><span>SEATS</span><b>×n</b><i class="tix__bar" aria-hidden="true"></i><span class="tix__no">Nº 0312</span></div>
+        </article>
+      </div>
+
+      <p class="tk__whole mono">the whole theatre? on-prem, your own god, a contract with a lot of clauses. <a href="backstage.html" data-cursor="talk">talk to the stage manager →</a></p>
+    </section>
+
+    <!-- ============ find your ticket: three questions, no salesman ============ -->
+    <section class="find" id="find" data-act="2">
+      <header class="seats__head">
+        <p class="mono seats__k">FIND YOUR TICKET</p>
+        <h2 class="seats__h"><span>Which</span><span>ticket?</span></h2>
+        <p class="mono dim">four questions. no salesman, no demo call.</p>
+      </header>
+      <div class="seats__grid">
+        <form class="find__q" data-find onsubmit="return false">
+          <fieldset>
+            <legend class="mono"><i>01</i>how many developers?</legend>
+            <div class="find__range"><b data-devs-v>1</b><input type="range" min="1" max="50" value="1" data-devs aria-label="developers" data-cursor="slide" /></div>
+          </fieldset>
+          <fieldset>
+            <legend class="mono"><i>02</i>is your code private?</legend>
+            <div class="seg mono" data-q="priv"><button type="button" data-v="0" class="is-on">no, it’s open</button><button type="button" data-v="1">yes, private</button></div>
+          </fieldset>
+          <fieldset>
+            <legend class="mono"><i>03</i>should deus work while you sleep?</legend>
+            <div class="seg mono" data-q="night"><button type="button" data-v="0" class="is-on">no</button><button type="button" data-v="1">sometimes</button><button type="button" data-v="2">every night</button></div>
+          </fieldset>
+          <fieldset>
+            <legend class="mono"><i>04</i>who reviews the pull requests?</legend>
+            <div class="seg mono" data-q="rev"><button type="button" data-v="0" class="is-on">we do</button><button type="button" data-v="1">deus, on all of them</button></div>
+          </fieldset>
+        </form>
+        <div class="seats__side">
+          <article class="live" data-live>
+            <i class="box live__box" aria-hidden="true"><b data-l-tag>recommended</b></i>
+            <div class="live__main">
+              <header class="mono"><span data-l-admit>ADMIT ONE</span><span data-l-date>TONIGHT</span></header>
+              <p class="live__show">EX-MACHINA</p>
+              <p class="live__plan" data-l-plan>Standing room</p>
+              <dl class="mono">
+                <div><dt>seats</dt><dd data-l-seats>1</dd></div>
+                <div><dt>per seat</dt><dd data-l-each>$0</dd></div>
+                <div><dt>acts</dt><dd data-l-acts>30/day</dd></div>
+                <div><dt>total</dt><dd data-l-total>free</dd></div>
+              </dl>
+              <p class="live__why mono" data-l-why>because: just you, open code, nights off.</p>
+            </div>
+            <div class="live__stub mono"><i class="tix__bar" aria-hidden="true"></i><span data-l-no>Nº 0001</span></div>
+          </article>
+          <button class="btn btn--ember magnetic" type="button" data-print data-cursor="print"><span>print my ticket</span> <span aria-hidden="true">↓</span></button>
+          <p class="mono dim seats__note">it’s a concept. no money moves, no card is asked for.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ the programme (compare) ============ -->
+    <section class="prog" data-act="3">
+      <h2 class="prog__h"><span>The</span><span>programme</span></h2>
+      <div class="prog__wrap">
+        <table class="prog__t">
+          <thead class="mono"><tr><th></th><th>standing</th><th class="is-hot">stalls</th><th>box</th></tr></thead>
+          <tbody>
+            <tr><th>the oracle · ask</th><td>✓</td><td class="is-hot">✓</td><td>✓</td></tr>
+            <tr><th>the mechanic · fix</th><td>✓</td><td class="is-hot">✓</td><td>✓</td></tr>
+            <tr><th>the architect · plan</th><td>—</td><td class="is-hot">✓</td><td>✓</td></tr>
+            <tr><th>the critic · review</th><td>—</td><td class="is-hot">your PRs</td><td>everyone’s PRs</td></tr>
+            <tr><th>the chorus · test</th><td>—</td><td class="is-hot">✓</td><td>✓</td></tr>
+            <tr><th>the understudy · nights</th><td>—</td><td class="is-hot">1 / week</td><td>every night</td></tr>
+            <tr><th>acts per day</th><td>1</td><td class="is-hot">∞</td><td>∞</td></tr>
+            <tr><th>private repos</th><td>—</td><td class="is-hot">✓</td><td>✓</td></tr>
+            <tr><th>pushes to main without you</th><td>0</td><td class="is-hot">0</td><td>0</td></tr>
+            <tr><th>trained on your code</th><td>never</td><td class="is-hot">never</td><td>never</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ box office (faq) ============ -->
+    <section class="notes">
+      <h2 class="notes__h"><span>Box</span><span>office</span></h2>
+      <div class="notes__list">
+        <details><summary><i class="mono">01</i>can i get a refund if the god doesn’t show up?<b aria-hidden="true">+</b></summary><p>yes, within 30 days, no questions. it will show up, though. it’s contractually dramatic.</p></details>
+        <details><summary><i class="mono">02</i>what counts as an act?<b aria-hidden="true">+</b></summary><p>one request: a question, a fix, a plan, a review. standing room gets thirty a day, which is plenty of tragedy for anyone.</p></details>
+        <details><summary><i class="mono">03</i>can i change seats later?<b aria-hidden="true">+</b></summary><p>any time, from the stalls to the box and back. the difference is calculated to the day.</p></details>
+        <details><summary><i class="mono">04</i>students, open source, theatre kids?<b aria-hidden="true">+</b></summary><p>the stalls are free for students and for maintainers of open-source projects. bring proof, or a very convincing monologue.</p></details>
+      </div>
+    </section>
+
+    <!-- ============ next → backstage ============ -->
+    <section class="next" data-act="4">
+      <canvas data-noise="next" aria-hidden="true"></canvas>
+      <p class="mono next__k">NEXT SCENE</p>
+      <a class="next__a" href="backstage.html" data-cursor="backstage"><span>Come</span><span>backstage <i>→</i></span></a>
+      <p class="mono dim">who built the crane, and why.</p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <canvas class="ft__noise" data-noise="ft" aria-hidden="true"></canvas>
+    <div class="ft__cols ft__cols--top">
+      <div class="ft__about">
+        <b class="ft__logo"><svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>ex-machina</b>
+        <p>ex-machina is a concept ai pair programmer. it reads, plans, writes and tests, then leaves the stage before the applause.</p>
+      </div>
+      <div><b>the play</b><a href="script.html">the script</a><a href="cast.html">the cast</a><a href="rehearsal.html">rehearsal</a><a href="tickets.html">tickets</a></div>
+      <div><b>backstage</b><a href="backstage.html">about</a><span>docs</span><span>changelog</span><span>status: <em class="ok">on stage</em></span></div>
+      <div class="ft__news"><b>join the cast</b><p>one email per act. no cliffhangers.</p>
+        <form class="ft__form" data-news><input type="email" placeholder="Enter your email" required data-cursor="type" /><button aria-label="join" data-cursor="join">→</button></form>
+      </div>
+    </div>
+    <p class="ft__word" aria-hidden="true">Ex<i>✦</i>Machina</p>
+    <div class="ft__bottom">
+      <span>© 2026 EX-MACHINA · a concept assistant. no gods were harmed.</span>
+      <span class="ft__cookie">we use cookies for dramatic effect. <button data-cookie>Accept</button></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tickets.js"></script>
+</body>
+</html>
+<!--
+     ┌────────────────────┬──────┐       /\_/\
+     │ ADMIT ONE          ┊ G 47 │      ( o.o )   <3  ghostly.grl
+     └────────────────────┴──────┘       > ^ <
+     no money moves. it's theatre.
+-->

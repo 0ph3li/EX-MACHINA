@@ -1,0 +1,75 @@
+/* ═══════════════════════════════════════════════════════════════
+   EX-MACHINA — cast.css (the cast / modes)
+   concept, design & code by ghostly.grl ♥
+   one cloud of dots that changes costume, a red box follows the actor,
+   a call sheet that knows what time it is.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════ casting (pinned) ═══════════════ */
+.cs { position: relative; background: #000; }
+.cs__pin { position: relative; height: 100vh; min-height: 660px; overflow: hidden; display: grid; grid-template-columns: minmax(170px, 17%) 1fr minmax(300px, 29%); gap: 3vw; padding: 13vh var(--pad) 8vh; align-items: stretch; }
+.cs__list { position: relative; z-index: 2; list-style: none; display: flex; flex-direction: column; justify-content: center; gap: 2px; }
+.cs__list button { display: flex; gap: 14px; width: 100%; padding: 10px 0; text-align: left; font: 300 13px var(--mono); color: var(--dim); border-bottom: 1px solid var(--line); transition: color 0.3s, padding 0.4s var(--ease); }
+.cs__list button i { font-style: normal; width: 2.4em; font-family: var(--display); font-size: 15px; }
+.cs__list button:hover { color: var(--pearl-2); }
+.cs__list li.is-on button { color: var(--pearl); padding-left: 8px; }
+.cs__list li.is-on button i { color: var(--ember); }
+.cs__stage { position: relative; min-height: 0; }
+.cs__stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; }
+.cs__box { left: 0; top: 0; width: 0; height: 0; z-index: 2; }
+.cs__mode { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); font-size: 12px; letter-spacing: 0.12em; color: var(--pearl-2); }
+.cs__mode b { font-weight: 400; color: var(--ember); }
+.cs__card { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 14px; padding: 14px; border: 1px solid var(--line); background: rgba(5, 5, 6, 0.86); min-height: 0; }
+.cs__top { display: flex; justify-content: space-between; font-size: 11px; color: var(--grey); letter-spacing: 0.06em; }
+.cs__shots { position: relative; flex: 1; min-height: 120px; }
+.cs__shot { position: absolute; inset: 0; opacity: 0; transition: opacity 0.5s; background: radial-gradient(90% 70% at 50% 40%, #1b1c22, #060607 75%); }
+.cs__shot.is-on { opacity: 1; }
+.cs__shot::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 3px); }
+.cs__shot > span { z-index: 1; }
+.cs__name { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 3.2vw, 54px); line-height: 0.95; letter-spacing: -0.02em; text-shadow: 0 0 22px rgba(255, 255, 255, 0.16); }
+.cs__does { font-size: 14.5px; line-height: 1.45; color: var(--pearl-2); }
+.cs__dl { display: flex; flex-direction: column; gap: 6px; font-size: 11.5px; }
+.cs__dl div { display: grid; grid-template-columns: 6.5em 1fr; gap: 8px; padding-top: 6px; border-top: 1px solid var(--line); }
+.cs__dl dt { color: var(--dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.cs__dl dd { color: var(--pearl-2); }
+.cs__line { font-family: var(--serif); font-style: italic; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.3; color: var(--pearl); min-height: 2.6em; }
+.cs__count { position: absolute; right: var(--pad); bottom: 3vh; font-size: 13px; color: var(--grey); }
+.cs__count span { color: var(--pearl); }
+
+/* ═══════════════ call sheet ═══════════════ */
+.call { padding: 18vh var(--pad) 14vh; background: #000; }
+.call__head { display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center; margin-bottom: 8vh; }
+.call__k { font-size: 12px; letter-spacing: 0.12em; color: var(--pearl-2); }
+.call__h { display: flex; flex-direction: column; font-family: var(--display); font-weight: 400; font-size: clamp(54px, 7vw, 120px); line-height: 0.86; letter-spacing: -0.03em; text-shadow: 0 0 30px rgba(255, 255, 255, 0.16); }
+.call__h span:first-child { transform: translateX(-0.4em); }
+.call__h span:last-child { transform: translateX(0.5em); }
+.call__head p:last-child { font-size: 12.5px; }
+.call__head b { font-weight: 400; color: var(--pearl); }
+.call__list { list-style: none; max-width: 1100px; margin: 0 auto; border-top: 1px solid var(--line); }
+.call__list li { position: relative; display: grid; grid-template-columns: 5.5em 34px 1.1fr 2fr 5.5em; gap: 22px; align-items: center; padding: 22px 12px; border-bottom: 1px solid var(--line); color: var(--grey); transition: color 0.4s, background 0.4s; }
+.call__list li > span { font-size: 13px; }
+.call__list li i { width: 24px; height: 24px; color: var(--dim); }
+.call__list li b { font-family: var(--display); font-weight: 400; font-size: clamp(22px, 2vw, 30px); color: var(--pearl-2); }
+.call__list li p { font-size: 13.5px; line-height: 1.45; }
+.call__list li em { font-style: normal; font-size: 11px; text-align: right; color: var(--dim); }
+.call__list li:hover { color: var(--pearl-2); }
+.call__list li.is-now { color: var(--pearl); background: rgba(255, 51, 36, 0.05); }
+.call__list li.is-now i { color: var(--ember); }
+.call__list li.is-now b { color: #fff; }
+.call__list li.is-now::after { content: ''; position: absolute; inset: 6px; border: 1.5px solid var(--ember); box-shadow: 0 0 18px rgba(255, 51, 36, 0.25); pointer-events: none; animation: lock 0.6s steps(2) 3; }
+.call__list li.is-now::before { content: 'ON STAGE NOW'; position: absolute; left: 6px; top: -4px; transform: translateY(-50%); padding: 2px 6px 1px; font: 400 9.5px/1.2 var(--mono); letter-spacing: 0.06em; color: #fff; background: var(--ember); z-index: 1; }
+
+/* ═══════════════ responsive ═══════════════ */
+@media (max-width: 1000px) {
+  .cs__pin { grid-template-columns: 1fr; grid-template-rows: 38vh auto; gap: 14px; padding-top: 11vh; }
+  .cs__list { display: none; }
+  .cs__shots { display: none; }
+  .cs__card { gap: 10px; align-self: start; }
+  .call__list li { grid-template-columns: 4.5em 1fr; row-gap: 6px; }
+  .call__list li i, .call__list li em { display: none; }
+  .call__list li p { grid-column: 1 / -1; }
+}
+
+/* her photos: keep the figure in frame */
+.cs__shot:nth-child(4) > img { object-position: 50% 78%; }
+.cs__shot:nth-child(3) > img { object-position: 50% 40%; }

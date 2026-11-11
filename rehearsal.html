@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>rehearsal — EX-MACHINA</title>
+  <meta name="description" content="the playground. pick a bug or paste your own, lower the god, watch the red box find the line and the patch arrive. a dress rehearsal with no audience." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!--
+     ═══════════════════════════════════════════════════════════════════
+       ○ ○ ○                                    ✳      s i t e   b y
+       ┌──────────────────────────────────────┐
+       │ 03  for (let i = 0; i ┌──┐ cart…      │       g h o s t l y . g r l
+       │                       │<=│ line 47    │      ─────────────────────────
+       │                       └──┘            │       concept · design · code
+       └──────────────────────────────────────┘
+        [a crane creaks. deus is lowered in.]              /\_/\
+        - <=                                              ( o.o )  <3
+        + <                                                > ^ <
+     ═══════════════════════════════════════════════════════════════════
+       concept, design & code by ghostly.grl ♥
+       EX-MACHINA — rehearsal (the playground). the window is the A28
+       frame (○○○ and ✳); the editor is real: paste a bug and a few
+       scripted rules find the line, write the patch and apply it.
+       nothing leaves your browser.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@300..500&family=Gloock&family=Instrument+Serif:ital@0;1&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/script.css" />
+  <link rel="stylesheet" href="css/rehearsal.css" />
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"><i class="cursor__plus"></i><span class="cursor__label mono"></span></div>
+
+  <div class="rail" aria-hidden="true">
+    <div class="rail__wire"><i class="rail__hook"></i></div>
+    <ol class="rail__acts mono"><li>i</li><li>ii</li><li>iii</li><li>exit</li></ol>
+  </div>
+
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-cursor="home">
+      <svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>
+      <span>ex-machina</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="script.html" data-cursor="the script">the script</a>
+      <a href="cast.html" data-cursor="the cast">the cast</a>
+      <a href="rehearsal.html" data-cursor="try it">rehearsal</a>
+      <a href="tickets.html" data-cursor="pricing">tickets</a>
+      <a href="backstage.html" data-cursor="about">backstage</a>
+    </nav>
+    <a class="btn btn--pearl nav__cta magnetic" href="tickets.html" data-cursor="get deus">get deus</a>
+    <button class="nav__burger" aria-label="menu"><i></i><i></i></button>
+  </header>
+
+  <main>
+
+    <!-- ============ title ============ -->
+    <section class="sh sh--short" data-act="0">
+      <canvas data-noise="sh" aria-hidden="true"></canvas>
+      <canvas class="sh__god" data-glyph aria-hidden="true"></canvas>
+      <i class="box sh__box" aria-hidden="true"><b>bug</b></i>
+      <p class="sh__kick mono">TRY / BREAK / WATCH / FIX</p>
+      <h1 class="sh__title" aria-label="Dress Rehearsal">
+        <span class="sh__a" data-split>Dress</span>
+        <i class="hero__slash sh__slash" aria-hidden="true"></i>
+        <span class="sh__b" data-split>Rehearsal</span>
+      </h1>
+      <p class="sh__sub">a stage with no audience.<br /><span class="dim">bring a bug, watch the ending.</span></p>
+      <p class="sh__file mono">REHEARSAL.exe</p>
+      <p class="hero__v mono" aria-hidden="true">SYSTEM DEUS // <b>STANDING BY</b></p>
+      <p class="hero__tc mono" data-tc>00:00:00:00</p>
+      <a class="sh__down mono" href="#stage" data-cursor="go">↓ to the stage</a>
+    </section>
+
+    <!-- ============ the stage: a real editor + deus ============ -->
+    <section class="rh" id="stage" data-act="1">
+      <canvas data-noise="rh" aria-hidden="true"></canvas>
+      <div class="rh__win">
+        <header class="rh__bar"><i class="rh__dots" aria-hidden="true"><b></b><b></b><b></b></i><span class="mono" data-file>checkout.js</span><span class="rh__ast" aria-hidden="true">✳</span></header>
+
+        <nav class="rh__tabs mono" aria-label="pick a bug">
+          <p class="rh__label">PICK A BUG</p>
+          <button type="button" data-scn="0" class="is-on"><i data-pxi="bug"></i><span>checkout.js<small>it works on friday</small></span></button>
+          <button type="button" data-scn="1"><i data-pxi="eye"></i><span>profile.js<small>undefined, again</small></span></button>
+          <button type="button" data-scn="2"><i data-pxi="box"></i><span>cart.py<small>the coffee won’t leave</small></span></button>
+          <button type="button" data-scn="3"><i data-pxi="target"></i><span>hero.css<small>centre the div</small></span></button>
+          <button type="button" data-scn="4"><i data-pxi="star"></i><span>yours.txt<small>paste your own</small></span></button>
+        </nav>
+
+        <div class="rh__ed" data-ed>
+          <pre class="rh__gut mono" data-gut aria-hidden="true"></pre>
+          <textarea class="rh__code mono" data-code spellcheck="false" autocomplete="off" aria-label="code" data-cursor="edit"></textarea>
+          <i class="box rh__box" data-box aria-hidden="true"><b>scanning</b></i>
+          <i class="rh__flash" data-flash aria-hidden="true"></i>
+        </div>
+
+        <aside class="rh__log">
+          <header class="rh__lh mono"><canvas data-mini aria-hidden="true"></canvas><span>deus · stage log</span><b data-state>STANDING BY</b></header>
+          <ol class="rh__lines" data-log aria-live="polite">
+            <li class="dir">[the stage is dark. a bug waits in the wings.]</li>
+            <li class="sys">› pick a bug on the left, or paste your own. then lower the god.</li>
+          </ol>
+          <div class="rh__act">
+            <button class="btn btn--ember magnetic" type="button" data-run data-cursor="descend"><span>lower the god</span> <span aria-hidden="true">↓</span></button>
+            <div class="rh__after" data-after hidden>
+              <button class="btn btn--pearl btn--sm" type="button" data-accept data-cursor="ship it">accept patch</button>
+              <button class="btn btn--sm rh__undo" type="button" data-undo data-cursor="undo">undo</button>
+            </div>
+          </div>
+        </aside>
+
+        <footer class="rh__foot mono"><span>tests <b data-tests>—</b></span><span data-tc>00:00:00:00</span><span>nothing leaves your browser</span></footer>
+      </div>
+    </section>
+
+    <!-- ============ rules of rehearsal ============ -->
+    <section class="rules" data-act="2">
+      <p class="mono rules__k">RULES OF REHEARSAL</p>
+      <ol class="rules__list">
+        <li><i data-pxi="eye"></i><b>Nothing leaves the room</b><p>your code stays in this tab. no server, no copy, no training. close it and it’s gone.</p></li>
+        <li><i data-pxi="star"></i><b>The god is scripted</b><p>this is a concept: deus knows a handful of classic tragedies. the real thing reads your whole repo.</p></li>
+        <li><i data-pxi="bug"></i><b>The bugs are real</b><p>every one of them has ruined somebody’s friday. probably yours.</p></li>
+      </ol>
+    </section>
+
+    <!-- ============ next → tickets ============ -->
+    <section class="next" data-act="3">
+      <canvas data-noise="next" aria-hidden="true"></canvas>
+      <p class="mono next__k">NEXT SCENE</p>
+      <a class="next__a" href="tickets.html" data-cursor="tickets"><span>Opening night</span><span>tickets <i>→</i></span></a>
+      <p class="mono dim">the rehearsal was free. so is the first act.</p>
+    </section>
+
+  </main>
+
+  <footer class="ft">
+    <canvas class="ft__noise" data-noise="ft" aria-hidden="true"></canvas>
+    <div class="ft__cols ft__cols--top">
+      <div class="ft__about">
+        <b class="ft__logo"><svg class="hook" viewBox="0 0 20 28" aria-hidden="true"><path d="M10 0v12" /><path d="M10 12c-4 0-6 3-6 6.5S6.5 25 10 25s6-2.5 6-5.5" /><circle cx="16" cy="19.5" r="1.6" /></svg>ex-machina</b>
+        <p>ex-machina is a concept ai pair programmer. it reads, plans, writes and tests, then leaves the stage before the applause.</p>
+      </div>
+      <div><b>the play</b><a href="script.html">the script</a><a href="cast.html">the cast</a><a href="rehearsal.html">rehearsal</a><a href="tickets.html">tickets</a></div>
+      <div><b>backstage</b><a href="backstage.html">about</a><span>docs</span><span>changelog</span><span>status: <em class="ok">on stage</em></span></div>
+      <div class="ft__news"><b>join the cast</b><p>one email per act. no cliffhangers.</p>
+        <form class="ft__form" data-news><input type="email" placeholder="Enter your email" required data-cursor="type" /><button aria-label="join" data-cursor="join">→</button></form>
+      </div>
+    </div>
+    <p class="ft__word" aria-hidden="true">Ex<i>✦</i>Machina</p>
+    <div class="ft__bottom">
+      <span>© 2026 EX-MACHINA · a concept assistant. no gods were harmed.</span>
+      <span class="ft__cookie">we use cookies for dramatic effect. <button data-cookie>Accept</button></span>
+      <span class="ft-sign">concept, design &amp; code by <span class="sig">ghostly.grl</span> ♥</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/rehearsal.js"></script>
+</body>
+</html>
+<!--
+     ○ ○ ○                         ✳      /\_/\
+     - for (let i = 0; i <= n; i++)      ( o.o )   <3  ghostly.grl
+     + for (let i = 0; i <  n; i++)       > ^ <
+     [exit deus, before the applause.]
+-->
